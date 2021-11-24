@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-const TodoTable = ({userId,setUserId}) => {
-  const [todos, setTodos] = useState(undefined);
+const TodoTable = ({userId,setUserId,todos,setTodos}) => {
+ 
   useEffect(() => {
     axios
       .get("https://jsonplaceholder.typicode.com/todos")
